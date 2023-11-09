@@ -87,7 +87,7 @@ if (!empty($_POST)) {
             <form action="lisaa_asiakas.php" method="post" class="mt-4">
                 <div class="mb-3 row">
                     <label for="etunimi" class="col-sm-3 col-form-label">Etunimi</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="etunimi" class="form-control
                         <?php echo (!empty($etunimiError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($etunimi)) ? $etunimi : '' ?>">
                         <?php if (!empty($etunimiError)) : ?>
@@ -101,7 +101,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="sukunimi" class="col-sm-3 col-form-label">Sukunimi</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="sukunimi" class="form-control
                         <?php echo (!empty($sukunimiError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($sukunimi)) ? $sukunimi : '' ?>">
                         <?php if (!empty($sukunimiError)) : ?>
@@ -115,7 +115,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="lahiosoite" class="col-sm-3 col-form-label">Lähiosoite</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="lahiosoite" class="form-control
                         <?php echo (!empty($lahiosoiteError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($lahiosoite)) ? $lahiosoite : '' ?>">
                         <?php if (!empty($lahiosoiteError)) : ?>
@@ -129,7 +129,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="postinumero" class="col-sm-3 col-form-label">Postinumero</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="postinumero" class="form-control
                         <?php echo (!empty($postinumeroError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($postinumero)) ? $postinumero : '' ?>">
                         <?php if (!empty($postinumeroError)) : ?>
@@ -143,7 +143,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="postitoimipaikka" class="col-sm-3 col-form-label">Postitoimipaikka</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="postitoimipaikka" class="form-control
                         <?php echo (!empty($postitoimipaikkaError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($postitoimipaikka)) ? $postitoimipaikka : '' ?>">
                         <?php if (!empty($postitoimipaikkaError)) : ?>
@@ -157,7 +157,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="sahkoposti" class="col-sm-3 col-form-label">Sähköposti</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="sahkoposti" class="form-control
                         <?php echo (!empty($sahkopostiError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($sahkoposti)) ? $sahkoposti : '' ?>">
                         <?php if (!empty($sahkopostiError)) : ?>
@@ -171,7 +171,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="mb-3 row">
                     <label for="puhelin" class="col-sm-3 col-form-label">Puhelin</label>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <input type="text" name="puhelin" class="form-control
                         <?php echo (!empty($puhelinError)) ? 'is-invalid' : ''; ?>" value="<?php echo (!empty($puhelin)) ? $puhelin : '' ?>">
                         <?php if (!empty($puhelinError)) : ?>
