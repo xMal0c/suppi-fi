@@ -9,4 +9,5 @@
 </head>
 
 <body>
+    <?php include_once 'nav.php'; ?>
     <div class="container mt-4">

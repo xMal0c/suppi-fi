@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vuokraamo</title>
-</head>
+include_once 'inc/header.php';
+?>
 
-<body>
-    <?php
-    echo "Hey";
-    ?>
-</body>
+<h1>Tervetuloa SUP-Vuokraamoon!</h1>
 
-</html>
+<?php
+
+include_once 'inc/footer.php';
