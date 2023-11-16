@@ -35,7 +35,7 @@ if (!empty($_POST)) {
 }
 ?>
 
-<div class="card card-body bg-light mt-3">
+<div class="card card-body bg-light mt-3 shadow">
 
     <h3>Asiakastietojen poistaminen</h3>
     <p>Haluatko varmasti poistaa asiakkaan <?php echo $asiakas['nimi']; ?> tiedot?</p>

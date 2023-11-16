@@ -1,0 +1,162 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-danger {
+  background-color: #ed5d7d;
+  border-color: #ed5d7d;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.focus,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.btn-danger.active:hover,
+.btn-danger.active:focus {
+  background-color: #d55471;
+  border-color: #d55471;
+}
+
+.btn-primary {
+  background-color: #57bcf9;
+  border-color: #57bcf9;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus :hover {
+  background-color: #4ea9e0;
+  border-color: #4ea9e0;
+}
+
+.btn-success {
+  background-color: #53b96a;
+  border-color: #53b96a;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.btn-success.active:hover,
+.btn-success.active:focus :hover {
+  background-color: #4ba75f;
+  border-color: #4ba75f;
+}
+
+.btn-outline-success {
+  color: #53b96a;
+  border-color: #53b96a;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #4ba75f;
+  border-color: #4ba75f;
+}
+
+.btn-outline-success:focus,
+.btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(83, 185, 106, 0.5);
+}
+
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+  color: #53b96a;
+  background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #53b96a;
+  border-color: #53b96a;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(83, 185, 106, 0.5);
+}
+
+.navbar-brand img {
+  transition: transform 0.34s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+.sign-in-link:hover {
+  color: #57bcf9;
+  transform: scale(0.95);
+}
+
+.sign-icon {
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-background {
+  background: url("../banner/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*
+.navbar-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.smaller-navbar {
+  transform: scale(0.9);
+}
+*/
+
+.navbar {
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+
+.card {
+  border: none !important;
+}

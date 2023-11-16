@@ -25,7 +25,7 @@ require_once 'inc/header.php';
 
 <div class="row mt-2">
     <div class="col-8 mx-auto">
-        <div class="card card-body bg-light mt-3">
+        <div class="card card-body shadow bg-light mt-3">
             <div class="d-flex justify-content-between align-items-center">
                 <h3>Asiakastietojen katsominen</h3>
                 <a href="asiakas.php" class="btn btn-primary">Takaisin</a>

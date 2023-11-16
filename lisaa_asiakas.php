@@ -82,7 +82,7 @@ if (!empty($_POST)) {
 
 <div class="row mt-2">
     <div class="col-8 mx-auto">
-        <div class="card card-body bg-light mt-3">
+        <div class="card card-body bg-light mt-3 shadow">
             <h3>Asiakastietojen lisääminen</h3>
             <form action="lisaa_asiakas.php" method="post" class="mt-4">
                 <div class="mb-3 row">

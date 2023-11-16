@@ -12,7 +12,7 @@ include_once 'inc/header.php';
         <thead>
             <tr>
                 <th>#</th>
-                <th>Tuottteen Nimi</th>
+                <th>Tuottteen nimi</th>
                 <th>Kuvaus</th>
                 <th>Painoraja</th>
                 <th>Määrä</th>
@@ -38,12 +38,12 @@ include_once 'inc/header.php';
                     <td><?php echo $row['painoraja']; ?></td>
                     <td><?php echo $row['kpl']; ?></td>
                     <td>
-                        <img src="<?php echo $src; ?>" alt="Product Image" style="width: 100px;">
+                        <img src="img/<?php echo $row['kuva']; ?>" alt="<?php echo $row['kuva']; ?>" width=80px>
                     </td>
                     <td>
-                        <a href="poista_tuote.php?tuoteID=<?php echo $row['tuoteID']; ?>" class="btn btn-danger">Poista</a>
                         <a href="paivita_tuote.php?tuoteID=<?php echo $row['tuoteID']; ?>" class="btn btn-success">Päivitä</a>
                         <a href="katso_tuote.php?tuoteID=<?php echo $row['tuoteID']; ?>" class="btn btn-primary">Katso</a>
+                        <a href="poista_tuote.php?tuoteID=<?php echo $row['tuoteID']; ?>" class="btn btn-danger">Poista</a>
                     </td>
                 </tr>
 

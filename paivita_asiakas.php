@@ -110,7 +110,7 @@ if (!empty($_POST)) {
 
 <div class="row mt-2">
     <div class="col-8 mx-auto">
-        <div class="card card-body bg-light mt-3">
+        <div class="card card-body bg-light mt-3 shadow">
 
             <form action="<?php echo $_SERVER['PHP_SELF'] . '?asiakasID=' . $asiakasID; ?>" method="post">
                 <!-- <input name="asiakasID" value="<?php echo $asiakasID; ?>" type="hidden"> -->
