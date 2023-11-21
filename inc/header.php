@@ -10,6 +10,7 @@ if (!tarkistaKirjautuminen() && $nykyinen_sivu != 'index.php' && $nykyinen_sivu 
 
 ?>
 
+
 <!doctype html>
 <html lang="en">
 
@@ -31,6 +32,7 @@ if (!tarkistaKirjautuminen() && $nykyinen_sivu != 'index.php' && $nykyinen_sivu 
     ?>
 
     <?php if ($nykyinen_sivu == 'index.php') : ?>
+        <div class="navseparator"></div>
         <div class="banner-background mt-2">
             <div class="container text-center">
                 <h1 class="fw-semibold text-white text-shadow">Lähde laineille Suppi.fi:n kanssa!</h1>
@@ -38,4 +40,5 @@ if (!tarkistaKirjautuminen() && $nykyinen_sivu != 'index.php' && $nykyinen_sivu 
         </div>
     <?php endif; ?>
 
+    <div class="navseparator"></div>
     <div class="container mt-4">

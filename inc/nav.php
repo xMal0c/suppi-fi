@@ -2,7 +2,7 @@
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 mt-2">
+<nav class="navbar navbar-expand-lg blurry-navbar rounded-4 mt-2 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand me-4" href="index.php">
             <img src="logo/suppi-lg.png" alt="Suppi.fi" width="120" class="">
@@ -12,9 +12,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-underline me-auto mb-1 mb-lg-0 nav">
-                <li class="nav-item">
-                    <a class="nav-link <?= ($current_page == 'index.php') ? 'active' : '' ?>" aria-current="page" href="index.php">Etusivu</a>
-                </li>
                 <?php if (tarkistaKirjautuminen()) : ?>
                     <li class="nav-item">
                         <a class="nav-link <?= ($current_page == 'asiakas.php') ? 'active' : '' ?>" aria-current="page" href="asiakas.php">Asiakas</a>
@@ -24,6 +21,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= ($current_page == 'myyja.php') ? 'active' : '' ?>" href="myyja.php">Myyjä</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= ($current_page == 'vuokraus.php') ? 'active' : '' ?>" href="vuokraus.php">Vuokraus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= ($current_page == 'vuokralla.php') ? 'active' : '' ?>" href="vuokralla.php">Vuokralla</a>
                     </li>
                 <?php endif; ?>
             </ul>

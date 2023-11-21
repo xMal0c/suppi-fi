@@ -2,6 +2,8 @@
 (() => {
   "use strict";
 
+  let riviMaara = 1;
+
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll(".needs-validation");
 
@@ -20,7 +22,62 @@
       false
     );
   });
-})();
+
+  const asiakasHakuBtn = document.querySelector("#asiakasHaku");
+
+  async function haeAsiakastiedot(hakusana) {
+    const response = await fetch("asiakashaku.php?hakusana=" + hakusana)
+    const data = await response.text()
+
+    console.log(data)
+    return data
+  }
+
+  if (asiakasHakuBtn != null) {
+    asiakasHakuBtn.addEventListener("click", () => {
+      const asiakasHakusana = document.querySelector("#hakusana")
+      haeAsiakastiedot(asiakasHakusana.value).then((data) => {
+        const asiakastiedot = document.querySelector("#asiakastiedot")
+        asiakastiedot.innerHTML = data
+      });
+    });
+  }
+
+  const hakusana = document.querySelector("#hakusana");
+
+  if (hakusana != null) {
+    hakusana.addEventListener("keyup", (e) => {
+      if (e.target.value.length > 2) {
+        haeAsiakastiedot(e.target.value).then((data) => {
+          document.querySelector("#asiakastiedot").innerHTML = data;
+        });
+      }
+    });
+  }
+
+  const lisaaRiviBtn = document.querySelector("#lisaaRivi")
+  if (lisaaRiviBtn != null) {
+    lisaaRiviBtn.addEventListener("click", () => {
+      const rivi = document.querySelector("#rivi-1")
+
+      const uusiRivi = rivi.cloneNode(true)
+      uusiRivi.id = "rivi-" + ++riviMaara
+      rivi.after(uusiRivi)
+
+      const tdElementit = uusiRivi.getElementsByTagName("td")
+      const viimeinenTD = tdElementit[tdElementit.length - 1];
+
+      const painike = viimeinenTD.getElementsByTagName("button")
+      painike[0].classList.remove("piiloon")
+
+      painike[0].addEventListener('click', (e)=> {
+        const riviTR = e.target.parentNode.parentNode
+        riviTR.remove()
+        riviMaara--
+      })
+    })
+  }
+})()
 
 if (window.location.pathname.endsWith("/lisaa_myyja.php")) {
   document
@@ -34,9 +91,7 @@ if (window.location.pathname.endsWith("/lisaa_myyja.php")) {
       }
     });
 }
-
 /*
-
 window.onscroll = function () {
   scrollFunction();
 };

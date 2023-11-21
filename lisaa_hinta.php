@@ -10,9 +10,6 @@ $tuoteID = '';
 $sql = 'SELECT tuoteID, nimi FROM tuote ORDER BY nimi ASC';
 $result = $pdo->query($sql);
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 if (!empty($_POST)) {
 
     $kesto = $_POST['kesto'];

@@ -8,6 +8,12 @@ include_once 'inc/header.php';
     <p>
         <a href="lisaa_asiakas.php" class="btn btn-outline-success">Lisää Asiakas</a>
     </p>
+
+    <div class="d-flex justify-content-end" role="search">
+        <input type="text" class="form-control w-25 me-2" name="hakusana" placeholder="Hae asiakas" id="hakusana">
+        <button class="btn btn-outline-success" id="asiakasHaku">Hae</button>
+    </div>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -18,7 +24,7 @@ include_once 'inc/header.php';
                 <th>Toiminnot</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="asiakastiedot">
             <?php
             //Luodaan yhteys tietokantaan & haetaan asiakastietoja
             require_once 'inc/database.php';
