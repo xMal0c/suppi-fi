@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['kirjautunut']) || $_SESSION['kirjautunut'] != true) {
+    header("Location: index.php");
+    exit;
+}
+
 
 require_once 'inc/database.php';
 
